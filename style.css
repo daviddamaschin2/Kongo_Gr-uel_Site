@@ -1,0 +1,329 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #78350f 0%, #44403c 50%, #1c1917 100%);
+    color: white;
+    line-height: 1.6;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 3rem 2rem;
+    text-align: center;
+    border-bottom: 4px solid #b91c1c;
+}
+
+h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+header p {
+    font-size: 1.5rem;
+    color: #d1d5db;
+}
+
+a:link {
+    color: #78350f
+        /* normal */
+}
+
+a:visited {
+    color: #78350f
+        /* visited */
+}
+
+a:hover {
+    color: #eb6a1f
+        /* on hover */
+}
+
+a:active {
+    color: #eb6a1f
+        /* while clicking */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
+
+.intro-section {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 3rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    border: 1px solid #4b5563;
+}
+
+.intro-section h2 {
+    color: #f87171;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.intro-section p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 3rem 0 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.timeline {
+    margin-bottom: 3rem;
+}
+
+.timeline-item {
+    background: linear-gradient(135deg, #292524 0%, #1c1917 100%);
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    border: 1px solid #4b5563;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.timeline-item:hover {
+    transform: scale(1.02);
+}
+
+.timeline-header {
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.timeline-year {
+    background: #dc2626;
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.timeline-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-left: 1rem;
+    flex-grow: 1;
+}
+
+.timeline-content {
+    padding: 0 1.5rem 1.5rem 1.5rem;
+    color: #d1d5db;
+    font-size: 1.1rem;
+    display: none;
+}
+
+.timeline-content.active {
+    display: block;
+}
+
+.chevron {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+
+.chevron.rotated {
+    transform: rotate(180deg);
+}
+
+.theme-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+
+    align-items: start;
+}
+
+.theme-card {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.theme-card:hover {
+    transform: scale(1.05);
+}
+
+.theme-card.red {
+    background: #dc2626;
+}
+
+.theme-card.gray {
+    background: #1f2937;
+}
+
+.theme-card.yellow {
+    background: #a16207;
+}
+
+.theme-card.green {
+    background: #15803d;
+}
+
+.theme-header {
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.theme-header-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.theme-icon {
+    width: 32px;
+    height: 32px;
+}
+
+.theme-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.theme-content {
+    padding: 1.5rem;
+    background: rgba(0, 0, 0, 0.3);
+    font-size: 1.1rem;
+    line-height: 1.8;
+    display: none;
+}
+
+.theme-content.active {
+    display: block;
+}
+
+.conclusion {
+    background: linear-gradient(135deg, #7f1d1d 0%, #000000 100%);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    border: 2px solid #dc2626;
+    margin-bottom: 3rem;
+}
+
+.conclusion h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.conclusion p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+footer {
+    background: black;
+    padding: 2rem;
+    text-align: center;
+    color: #9ca3af;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1.2rem;
+    }
+
+    .theme-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+}
+
+/* für die Seite Leopold II */
+.gradient-border-element {
+    position: relative;
+    display: inline-block;
+    padding: 4px;
+    border-radius: 12px;
+    background: linear-gradient(45deg, #ff416c, #ff4b2b, #ff9100, #ffdd00);
+    background-size: 300% 300%;
+    animation: gradient-shift 6s ease infinite;
+}
+
+.gradient-border-element::before {
+    content: '';
+    position: absolute;
+    inset: 4px;
+    background: white;
+    border-radius: 5px;
+    z-index: 0;
+}
+
+.gradient-border-element img {
+    position: relative;
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 6px;
+    z-index: 1;
+}
+
+@keyframes gradient-shift {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Dark mode styles */
+@media (prefers-color-scheme: dark) {
+    .gradient-border-element::before {
+        background: #222;
+    }
+
+    .gradient-border-element span {
+        color: #fff;
+    }
+}
+
+
+.profile-row {
+    display: flex;
+    align-items: center;
+    /* vertical alignment */
+    gap: 1.5rem;
+    /* space between image and text */
+}

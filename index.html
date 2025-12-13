@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Die Kolonialisierung im Kongo - Interaktives Poster</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Die Kolonialisierung des Kongo</h1>
+        <p>Belgiens dunkles Kapitel (1885-1960)</p>
+    </header>
+
+    <div class="container">
+        <div class="intro-section">
+            <h2>Einleitung</h2>
+            <p>
+                Die belgische Kolonialherrschaft im Kongo (heute: Demokratische Republik Kongo) gehört zu den dunkelsten
+                Kapiteln der europäischen Kolonialgeschichte. Von 1885 bis 1960 war das riesige zentralafrikanische
+                Gebiet zunächst Privatbesitz von König Leopold II, später belgische Kolonie.
+            </p>
+            <p>
+                Was als angebliche "zivilisatorische Mission" begann, entpuppte sich als eines der brutalsten
+                Ausbeutungssysteme der Geschichte, das Millionen Menschenleben kostete und dessen Folgen bis heute
+                spürbar sind.
+            </p>
+        </div>
+
+        <h2 class="section-title">
+            <svg class="timeline-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="16" y1="2" x2="16" y2="6"></line>
+                <line x1="8" y1="2" x2="8" y2="6"></line>
+                <line x1="3" y1="10" x2="21" y2="10"></line>
+            </svg>
+            Historische Zeitleiste
+        </h2>
+        <div class="timeline">
+
+            <div class="timeline-item" onclick="toggleTimeline(1)">
+                <div class="timeline-header">
+                    <div style="display: flex; align-items: center;">
+                        <div class="timeline-year">1885</div>
+                        <div class="timeline-title">Berliner Konferenz</div>
+                    </div>
+                    <svg class="chevron" id="chevron-1" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                </div>
+                <div class="timeline-content" id="timeline-1">
+                    Auf der Berliner Konferenz wurde der Kongo-Freistaat international anerkannt. Er stand nicht unter
+                    belgischer Staatshoheit, sondern war der Privatbesitz von König Leopold II. von Belgien. Die
+                    beteiligten Mächte verpflichteten sich formal zur Bekämpfung des Sklavenhandels. Mit dem Prinzip der
+                    „effektiven Okkupation“ wurden koloniale Ansprüche nur bei tatsächlicher Kontrolle anerkannt – ein
+                    entscheidender Vorteil für Leopold II.
+                </div>
+            </div>
+
+            <div class="timeline-item" onclick="toggleTimeline(2)">
+                <div class="timeline-header">
+                    <div style="display: flex; align-items: center;">
+                        <div class="timeline-year">1885-1908</div>
+                        <div class="timeline-title">Kongo-Freistaat</div>
+                    </div>
+                    <svg class="chevron" id="chevron-2" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                </div>
+                <div class="timeline-content" id="timeline-2">
+                    <p>Der Kongo-Freistaat war der Privatbesitz von König Leopold II. und wurde systematisch
+                        wirtschaftlich
+                        ausgebeutet. Die Bevölkerung wurde zur Zwangsarbeit, insbesondere zur Gewinnung von Kautschuk
+                        und
+                        Elfenbein, gezwungen. Gewalt, Geiselnahmen und Verstümmelungen dienten der Durchsetzung von
+                        Abgabenquoten. Die Ausbeutung führte zu Millionen Todesopfern und tiefgreifenden sozialen
+                        Zerstörungen. Internationale Kritik zwang Belgien 1908 zur Übernahme des Kongo als Kolonie.</p>
+                    <a href="Leopold.html">
+                        Erfahre mehr über die Herrschaft des Kongos unter Leopold II.
+                    </a>
+                </div>
+            </div>
+
+            <div class="timeline-item" onclick="toggleTimeline(3)">
+                <div class="timeline-header">
+                    <div style="display: flex; align-items: center;">
+                        <div class="timeline-year">1908</div>
+                        <div class="timeline-title">Belgisch-Kongo</div>
+                    </div>
+                    <svg class="chevron" id="chevron-3" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                </div>
+                <div class="timeline-content" id="timeline-3">
+                    Belgien übernimmt die Kolonie vom König nach internationalem Druck
+                </div>
+            </div>
+
+            <div class="timeline-item" onclick="toggleTimeline(4)">
+                <div class="timeline-header">
+                    <div style="display: flex; align-items: center;">
+                        <div class="timeline-year">1960</div>
+                        <div class="timeline-title">Unabhängigkeit</div>
+                    </div>
+                    <svg class="chevron" id="chevron-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                </div>
+                <div class="timeline-content" id="timeline-4">
+                    Der Kongo wird am 30. Juni unabhängig unter Patrice Lumumba
+                </div>
+            </div>
+        </div>
+
+        <h2 class="section-title">Themenbereiche</h2>
+        <div class="theme-grid">
+            <div class="theme-card red" onclick="toggleTheme(0)">
+                <div class="theme-header">
+                    <div class="theme-header-content">
+                        <svg class="theme-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                        <h3 class="theme-title">König Leopold II</h3>
+                    </div>
+                    <svg class="chevron" id="theme-chevron-0" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                </div>
+                <div class="theme-content" id="theme-0">
+                    Leopold II von Belgien (1835-1909) war der Hauptverantwortliche für eine der grausamsten
+                    Kolonialherrschaften der Geschichte. Unter dem Deckmantel humanitärer Ziele errichtete er ein
+                    brutales Ausbeutungssystem. Sein Privatbesitz, der Kongo-Freistaat, diente ausschließlich der
+                    persönlichen Bereicherung durch Elfenbein und Kautschuk.
+                </div>
+            </div>
+
+            <div class="theme-card gray" onclick="toggleTheme(1)">
+                <div class="theme-header">
+                    <div class="theme-header-content">
+                        <svg class="theme-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                            <polyline points="17 6 23 6 23 12"></polyline>
+                        </svg>
+                        <h3 class="theme-title">Gräueltaten und Zwangsarbeit</h3>
+                    </div>
+                    <svg class="chevron" id="theme-chevron-1" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                </div>
+                <div class="theme-content" id="theme-1">
+                    Die Bevölkerung wurde zur Kautschukgewinnung gezwungen. Wer die Quoten nicht erfüllte, wurde
+                    verstümmelt – oft wurden Hände abgehackt. Dörfer wurden niedergebrannt, Geiseln genommen.
+                    Schätzungen gehen von 10-15 Millionen Toten aus. Die Force Publique, eine private Armee, setzte
+                    dieses Terrorregime durch.
+                </div>
+            </div>
+
+            <div class="theme-card yellow" onclick="toggleTheme(2)">
+                <div class="theme-header">
+                    <div class="theme-header-content">
+                        <svg class="theme-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                        </svg>
+                        <h3 class="theme-title">Wirtschaftliche Ausbeutung</h3>
+                    </div>
+                    <svg class="chevron" id="theme-chevron-2" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                </div>
+                <div class="theme-content" id="theme-2">
+                    Der Kongo war reich an Bodenschätzen: Elfenbein, Kautschuk, später Kupfer und Diamanten. Die gesamte
+                    Wirtschaft war auf die Ausbeutung dieser Ressourcen ausgerichtet. Die kongolesische Bevölkerung
+                    profitierte nicht – sie wurde versklavt. Der Reichtum floss nach Belgien und machte Leopold II zu
+                    einem der reichsten Männer Europas.
+                </div>
+            </div>
+
+            <div class="theme-card green" onclick="toggleTheme(3)">
+                <div class="theme-header">
+                    <div class="theme-header-content">
+                        <svg class="theme-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="3" y1="9" x2="21" y2="9"></line>
+                            <line x1="9" y1="21" x2="9" y2="9"></line>
+                        </svg>
+                        <h3 class="theme-title">Widerstand und Unabhängigkeit</h3>
+                    </div>
+                    <svg class="chevron" id="theme-chevron-3" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                </div>
+                <div class="theme-content" id="theme-3">
+                    Trotz brutaler Unterdrückung gab es stets Widerstand. Nach dem Zweiten Weltkrieg wuchs die
+                    Unabhängigkeitsbewegung. Am 30. Juni 1960 wurde der Kongo unabhängig. Patrice Lumumba wurde erster
+                    Premierminister, wurde aber kurz darauf ermordet. Die Auswirkungen der Kolonialzeit prägen das Land
+                    bis heute.
+                </div>
+            </div>
+        </div>
+
+        <div class="conclusion">
+            <h2>Vermächtnis und Erinnerung</h2>
+            <p>
+                Die belgische Kolonialherrschaft im Kongo hat tiefe Narben hinterlassen. Die systematische Ausbeutung,
+                die Zerstörung traditioneller Strukturen und die Gewalt prägen das Land bis heute. Politische
+                Instabilität, wirtschaftliche Probleme und soziale Konflikte sind direkte Folgen dieser kolonialen
+                Vergangenheit.
+            </p>
+            <p>
+                Die Aufarbeitung dieser Geschichte ist in Belgien erst in den letzten Jahren intensiver geworden. Erst
+                2020 drückte König Philippe sein "tiefstes Bedauern" für die koloniale Vergangenheit aus. Die Forderung
+                nach Wiedergutmachung und echter Aufarbeitung bleibt aktuell.
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <p>Ein interaktives Poster zur Geschichte der belgischen Kolonialherrschaft im Kongo <br> Erstellt von Adrian,
+            David, Felix und Miklas</p>
+    </footer>
+
+    <script>
+        function toggleTimeline(index) {
+            const content = document.getElementById('timeline-' + index);
+            const chevron = document.getElementById('chevron-' + index);
+
+            if (content.classList.contains('active')) {
+                content.classList.remove('active');
+                chevron.classList.remove('rotated');
+            } else {
+                content.classList.add('active');
+                chevron.classList.add('rotated');
+            }
+        }
+
+        function toggleTheme(index) {
+            const content = document.getElementById('theme-' + index);
+            const chevron = document.getElementById('theme-chevron-' + index);
+
+            if (content.classList.contains('active')) {
+                content.classList.remove('active');
+                chevron.classList.remove('rotated');
+            } else {
+                content.classList.add('active');
+                chevron.classList.add('rotated');
+            }
+        }
+    </script>
+</body>
+
+</html>
