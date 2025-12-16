@@ -327,3 +327,14 @@ footer {
     gap: 1.5rem;
     /* space between image and text */
 }
+
+.comparison {
+    display: flex;
+    align-items: stretch;
+}
+
+.vertical-line {
+    width: 2px;
+    background-color: #00000000;
+    margin: 0 12px;
+}
